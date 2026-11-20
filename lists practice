@@ -1,0 +1,84 @@
+#append() – Add Single Item at End
+languages = ["Telugu", "Hindi", "English"]
+print(languages)
+languages.append("Tamil")
+print(languages)
+['Telugu', 'Hindi', 'English']
+['Telugu', 'Hindi', 'English', 'Tamil']
+
+# insert() - Add Item at Specific Position
+numbers = [190, 270, 460, 850]
+print(numbers)
+numbers.insert(3, 370)
+print(numbers)
+[190, 270, 460, 850]
+[190, 270, 460, 370, 850]
+
+#extend() – Add Multiple Items
+list1 = ["Apple", "Banana"]
+list2 = ["Mango", "Orange"]
+list1.extend(list2)
+print(list1)
+['Apple', 'Banana', 'Mango', 'Orange']
+
+#remove() – Delete First Occurrence
+numbers = [610, 280, 390, 420, 450]
+numbers.remove(280)
+print(numbers)
+[610, 390, 420, 450]
+
+#pop() – Remove and Return Item
+fruits = ["Apple", "Banana", "Mango", "Orange"]
+fruits.pop()
+print(fruits)
+fruits.pop(1)
+print(fruits)
+['Apple', 'Banana', 'Mango']
+['Apple', 'Mango']
+
+#clear() – Remove All Items
+numbers = [190, 290, 390, 490, 590]
+numbers.clear()
+print(numbers)
+[]
+
+#index() – Find Position of Item
+fruits = ["Apple", "Banana", "Mango", "Orange"]
+result = fruits.index("Mango")
+print(result)
+2
+
+#count() – Count Occurrences
+numbers = [9990, 2990, 1990, 3990, 1990, 1990]
+result = numbers.count(1990)
+print(result)
+3
+
+#sort() – Sort List in Order
+numbers = [650, 280, 470, 210, 330]
+numbers.sort()
+print(numbers)
+numbers.sort(reverse=True)
+print(numbers)
+[210, 280, 330, 470, 650]
+[650, 470, 330, 280, 210]
+
+#reverse() – Reverse List Order
+numbers = [10, 20, 30, 40, 50]
+numbers.reverse()
+print(numbers)
+[50, 40, 30, 20, 10]
+
+#copy() – Create Shallow Copy
+original = [10, 20, 30, 40]
+copied = original.copy()
+print("Original List:", original)
+print("Copied List:", copied)
+copied.append(50)
+print("Original List:", original)
+print("Copied List:", copied)
+Original List: [10, 20, 30, 40]
+Copied List: [10, 20, 30, 40]
+Original List: [10, 20, 30, 40]
+Copied List: [10, 20, 30, 40, 50]
+ 
